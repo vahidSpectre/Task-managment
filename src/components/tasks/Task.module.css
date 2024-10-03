@@ -1,0 +1,117 @@
+@import url(../../styles/variables.css);
+.task {
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--x29xchp);
+  margin-bottom: 1rem;
+  animation: show_up 0.25s ease-out forwards;
+  opacity: 0;
+  padding: 5px;
+  transition: all 0.25s ease-out;
+  display: flex;
+}
+.task:hover {
+  box-shadow: 0px 5px 5px 0px rgb(14, 36, 70);
+}
+.wrapper {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.actions {
+  width: 40%;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.title_wrapper,
+.caption_wrapper {
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 10px;
+}
+
+.title_wrapper {
+  display: flex;
+  font-size: large;
+  min-height: fit-content;
+}
+.caption_wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+}
+.title {
+  font-weight: bold;
+}
+.caption {
+  font-weight: light;
+}
+.divider {
+  width: 90%;
+  height: 1.5px;
+  background: var(--bbg);
+}
+.completed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  margin: 0 5px;
+}
+.arrow_ltr {
+  cursor: pointer;
+  color: white !important;
+  transition: all 0.25s !important;
+  margin-top: 1rem !important;
+}
+.arrow_rtl {
+  cursor: pointer;
+  color: white !important;
+  transition: all 0.25s !important;
+  transform: translateX(0px) rotate(180deg);
+  margin-top: 1rem !important;
+}
+.arrow_ltr:hover {
+  transform: translateX(10px);
+}
+.arrow_rtl:hover {
+  transform: translateX(-10px) rotate(180deg);
+}
+.delete_btn {
+  border-radius:10px;
+}
+.delete_btn,
+.delete_icon {
+  transition: all 0.5s !important;
+  cursor: pointer;
+}
+.delete_btn:hover {
+  background-color: rgb(92, 0, 0);
+  color: white;
+}
+.delete_btn:hover *.delete_icon {
+  color: white !important;
+}
+.delete_icon {
+  margin: 9px !important;
+  color: rgb(92, 0, 0) !important;
+}
+small{
+  white-space: nowrap;
+}
+@keyframes show_up {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

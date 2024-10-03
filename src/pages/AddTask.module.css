@@ -1,0 +1,67 @@
+@import url(../styles/variables.css);
+.add {
+  color: white;
+  padding: 5rem 2rem;
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 100vh;
+  display: flex;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title_wrapper,
+.caption_wrapper,
+.check_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 2rem 0 2rem 0;
+}
+.check_wrapper {
+  align-items: center;
+}
+.title {
+}
+.caption {
+}
+.title,
+.caption,
+.check {
+  font-size: large;
+  width: 7rem;
+}
+.text {
+}
+input {
+  background-color: white !important;
+}
+input,
+textarea {
+  width: 40vw;
+  max-width: 60vw !important;
+  border-radius: 10px 10px 0 0;
+  padding: 5px !important;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+.submit {
+  margin: 15px !important;
+  align-self: flex-end;
+}
+.error_text {
+  color: var(--rt);
+  transition: all .25s;
+  opacity: 0;
+}
+.active_error{
+    opacity: 1;
+}
+label{
+    cursor: pointer;
+}

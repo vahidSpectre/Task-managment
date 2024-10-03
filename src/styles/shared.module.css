@@ -1,0 +1,13 @@
+@import url(./variables.css);
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.rtl {
+  direction: rtl;
+}
+.ltr {
+  direction: ltr;
+}

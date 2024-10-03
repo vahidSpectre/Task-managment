@@ -1,0 +1,125 @@
+@import url(../styles/variables.css);
+.home {
+  height: fit-content;
+  margin: 0 auto;
+  margin-right: 0;
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all var(--base-duration);
+  flex: 1 1 auto;
+}
+.card {
+}
+.form_control {
+  width: 50% !important;
+}
+.form_control input {
+  border-color: white !important;
+}
+.right {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+.left {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.sort_wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  width: 40%;
+}
+.sort_container {
+  display: flex;
+  justify-content: space-between;
+}
+.sort_label {
+  color: white;
+  cursor: pointer;
+}
+.sort_input {
+  display: none;
+}
+.costum_radio {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 2px solid var(--x29xchp);
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.sort_input:checked ~ .costum_radio::after {
+  opacity: 1;
+}
+.costum_radio::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--x29xchp);
+  opacity: 0;
+  transition: all 0.25s;
+}
+.delete_all_btn {
+  border-radius: 100px !important;
+  border: none;
+  outline: none;
+  font-size: x-small !important;
+}
+@media only screen and (max-width: 576px) {
+  .home {
+       padding: 10rem 0 1rem 0;
+  }
+  .card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .form_control{
+    width: 40% !important;
+  }
+  .right,
+  .left {
+    width: 100%;
+  }
+  .right {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .home {
+    padding: 10rem 0 1rem 0;
+  }
+   .card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .form_control{
+    width: 40% !important;
+  }
+  .right,
+  .left {
+    width: 100%;
+  }
+  .right {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,15 @@
+:root {
+  --sidebar-open: 25%;
+  --sidebar-close: 0%;
+
+  --base-duration: 0.25s;
+
+  --bbg: #040404;
+
+  --xyeapbb: #20272b;
+  --x29xchp: #2e5975;
+  --rt:red;
+
+  --hbg: rgba(74, 0, 186, 0);
+  --abg: rgba(212, 255, 85, 0.122);
+}

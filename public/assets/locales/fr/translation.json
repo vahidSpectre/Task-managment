@@ -1,0 +1,26 @@
+{
+  "sidebar_btn_open": "باز کردن",
+  "sidebar_btn_close": "بستن",
+
+  "title": "تیتر",
+  "caption": "توضیحات",
+
+  "home": "صفحه اصلی",
+  "add": "اضافه کردن",
+  "completed": "انجام شده",
+
+  "submit": "افزودن وظیفه",
+  "error_text": "پر کردن این فیلد الزامیست",
+  "select": "انتخاب",
+  "selected": "انتخاب شده",
+  "delete": "پاک کردن",
+  "date": "تاریخ",
+  "sort": "مرتب کردن",
+
+  "increasing": "صعودی",
+  "decreasing": "نزولی",
+
+  "deleteAll": "پاک کردن منتخب(ها)",
+
+  "update": "بروز رسانی"
+}

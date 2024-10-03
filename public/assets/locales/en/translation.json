@@ -1,0 +1,27 @@
+{
+  "sidebar_btn_open": "open",
+  "sidebar_btn_close": "close",
+
+  "title": "Tile",
+  "caption": "Description",
+
+  "home":"Home",
+  "add":"Add task",
+  "completed":"Completed",
+
+  "submit":"Submit",
+
+  "error_text":"Please fill required fields",
+  "select":"Select",
+  "selected":"Selected",
+  "delete":"Delete",
+  "date":"Date",
+  "sort":"Sort",
+
+  "increasing":"Increasing",
+  "decreasing":"Decreasing",
+
+  "deleteAll":"Delete selected",
+
+  "update":"Update"
+}

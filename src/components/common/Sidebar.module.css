@@ -1,0 +1,111 @@
+@import url(../../styles/variables.css);
+.wrapper {
+  height: fit-content;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(22, 38, 60, 1) 100%
+  );
+  background-attachment: fixed;
+  min-width:450px;
+}
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  transition: all var(--base-duration);
+  z-index: 100;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-right: 1px solid var(--x29xchp);
+  border-left: 1px solid var(--x29xchp);
+  max-width: 200px;
+}
+.control,
+.lng_dropdown {
+  width: 2rem !important;
+  height: 2rem !important;
+  font-size: small !important;
+  margin: 15px 15px !important;
+}
+.control {
+  position: sticky;
+  top: 0;
+  border-radius: 50%;
+  transition: all 0.25s;
+  z-index: 100;
+  border: none;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: all 0.25s;
+}
+.control:hover {
+  opacity: 1;
+}
+.lng_dropdown {
+  background-color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  direction: ltr !important;
+  border-radius: 50% !important;
+}
+.open {
+  width: var(--sidebar-open);
+}
+.close {
+  width: var(--sidebar-close);
+  padding: 15px 0;
+  overflow: hidden;
+}
+.open_btn_ltr {
+  left: var(--sidebar-open);
+  opacity: 1;
+}
+.close_btn_ltr {
+  left: var(--sidebar-close);
+}
+.open_btn_rtl {
+  right: var(--sidebar-open);
+  opacity: 1;
+}
+.close_btn_rtl {
+  right: var(--sidebar-close);
+}
+.top_part {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.action_section {
+  width: inherit;
+  margin-top: 2rem;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+.github_btn {
+  justify-self: flex-end;
+  margin: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

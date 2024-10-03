@@ -1,0 +1,55 @@
+@import url(../styles/variables.css);
+.c_ltr {
+  border-radius: 100px 0px 0px 100px;
+}
+.c_rtl {
+  border-radius: 0px 100px 100px 0px;
+}
+.btn_rtl,
+.btn_ltr {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 1.5rem 0.7rem;
+}
+.btn_rtl:hover * .arrow_before {
+  transform: translateX(0px);
+}
+.btn_ltr:hover * .arrow_forward {
+  transform: translateX(0px);
+}
+.icon {
+}
+.text {
+  white-space: nowrap;
+}
+.arrow_forward {
+  transform: translateX(-10px);
+  transition: all 0.25s !important;
+}
+.arrow_before {
+  transform: translateX(10px);
+  transition: all 0.25s !important;
+}
+
+@media only screen and (max-width: 576px) {
+ .arrow_forward,.arrow_before{
+  display: none !important;
+ }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .arrow_forward,.arrow_before{
+    display: none !important;
+  }
+}
